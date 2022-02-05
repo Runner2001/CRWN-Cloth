@@ -1,0 +1,6 @@
+export const Dropdown = {
+    TOGGLE_CART: "TOGGLE_CART",
+    ADD_ITEMS: 'ADD_ITEMS',
+    DELETE_ITEM: 'DELETE_ITEM',
+    REMOVE_ITEM: 'REMOVE_ITEM'
+}
