@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CRWN-clothing/static/css/main.71f61c4c.css",
-    "main.js": "/CRWN-clothing/static/js/main.65458e1f.js",
-    "static/media/shoppingbag.svg": "/CRWN-clothing/static/media/shoppingbag.a688874f6f1507316bdfa420328a4a53.svg",
-    "static/media/crown.svg": "/CRWN-clothing/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
-    "index.html": "/CRWN-clothing/index.html",
-    "main.71f61c4c.css.map": "/CRWN-clothing/static/css/main.71f61c4c.css.map",
-    "main.65458e1f.js.map": "/CRWN-clothing/static/js/main.65458e1f.js.map"
+    "main.css": "/static/css/main.71f61c4c.css",
+    "main.js": "/static/js/main.115b5e74.js",
+    "static/media/shoppingbag.svg": "/static/media/shoppingbag.a688874f6f1507316bdfa420328a4a53.svg",
+    "static/media/crown.svg": "/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
+    "index.html": "/index.html",
+    "main.71f61c4c.css.map": "/static/css/main.71f61c4c.css.map",
+    "main.115b5e74.js.map": "/static/js/main.115b5e74.js.map"
   },
   "entrypoints": [
     "static/css/main.71f61c4c.css",
-    "static/js/main.65458e1f.js"
+    "static/js/main.115b5e74.js"
   ]
 }
