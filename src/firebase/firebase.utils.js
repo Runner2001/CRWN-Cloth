@@ -32,7 +32,7 @@ export const createUserProfileDocument = async (userAuth, additionData) => {
 
     const userRef = doc(collectionRef, userAuth.uid)
     const snapshot = await getDoc(userRef);
-    console.log(snapshot.exists());
+    // console.log(snapshot.exists());
 
     if (!snapshot.exists()) {
         const { displayName, email } = userAuth;
@@ -62,7 +62,7 @@ export const addCollectionAndDoc = async (collectionKey, collectionArray) => {
         const newDocRef = doc(collectionRef);
         //setDoc(newDocRef, obj)
         batch.setDoc(newDocRef, obj)
-        console.log(newDocRef);
+        // console.log(newDocRef);
     });
 
     return await batch.commit();
@@ -80,7 +80,7 @@ export const convertCollectionSnapshotToMap = (collections) => {
             items
         }
     });
-    console.log(transformedCollections)
+    // console.log(transformedCollections)
     return transformedCollections.reduce((accumulator, collection) => {
         accumulator[collection.title.toLowerCase()] = collection;
 
