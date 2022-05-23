@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import { createStructuredSelector } from "reselect";
 import CollectionOver from "../../components/collection-overview/collection-overview.com";
 import LoadingCom from "../../components/Loading/Loading.com";
-import { FetchingData } from "../../redux/shop/shop.action";
+import { fetchingStart } from "../../redux/shop/shop.action";
 import {
   LoadingSelector,
   selectIsCollectionLoaded,
@@ -39,8 +39,8 @@ class ShopPage extends React.Component {
     // });
     // Up Phase Change to async Redux Api request
 
-    const { fetchingData } = this.props;
-    fetchingData();
+    const { fetchingStart } = this.props;
+    fetchingStart();
   }
 
   render() {
@@ -76,7 +76,7 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchingData: () => dispatch(FetchingData()),
+  fetchingStart: () => dispatch(fetchingStart()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ShopPage);
