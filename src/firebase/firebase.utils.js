@@ -90,9 +90,9 @@ export const convertCollectionSnapshotToMap = (collections) => {
 
 
 //Authentiation
-const provider = new GoogleAuthProvider();
+export const googleProvider = new GoogleAuthProvider();
 // provider.setCustomParameters({ prompt: 'select account' });
-provider.setCustomParameters({
+googleProvider.setCustomParameters({
     'login_hint': 'user@example.com'
 });
-export const signInWithGoogle = () => signInWithPopup(auth, provider);
+export const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
