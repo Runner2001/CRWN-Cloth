@@ -13,7 +13,6 @@ export function* fetchingCollectionAsync() {
     } catch (error) {
         yield put(fetchingFail(error.message))
     }
-
 }
 
 export function* fetchingCollectionStart() {
