@@ -26,3 +26,7 @@ export const RemoveItem = item => {
         payload: item
     }
 }
+
+export const clearCart = () => ({
+    type: Dropdown.CLEAR_CART
+})

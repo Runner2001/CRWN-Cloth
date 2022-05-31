@@ -28,6 +28,11 @@ export const dropDownReducer = (state = initialState, action) => {
                 ...state,
                 cartItems: removeItem(state.cartItems, action.payload)
             }
+        case Dropdown.CLEAR_CART:
+            return {
+                ...state,
+                cartItems: []
+            }
         default: return state
     }
 }
